@@ -1,18 +1,8 @@
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 
+
 public class Ex6Var5 {
-    /*public static boolean wordCheck(String str) {
-        int len = str.length();
-        System.out.println(len);
-        for (int i = 0; i < len / 2; ++i) {
-            if (str.charAt(i) != str.charAt(len - i - 1) | len == 1){
-                return false;
-            }
-        }
-        return true;
-    }
-     */
     public static boolean wordCheck(String str) {
         int len = str.length();
         for (int i = 0; i < len / 2; ++i) {
