@@ -1,4 +1,5 @@
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 
 public class Ex6Var5 {
     /*public static boolean wordCheck(String str) {
@@ -28,10 +29,10 @@ public class Ex6Var5 {
         try {
             br = new BufferedReader(
                     new InputStreamReader(
-                            new FileInputStream("D:\\Файлы 1\\Задание 6\\text1.txt"),"UTF-8"));
+                            new FileInputStream("D:\\Файлы 1\\Задание 6\\text1.txt"), StandardCharsets.UTF_8));
             bw = new BufferedWriter(
                     new OutputStreamWriter(
-                            new FileOutputStream("D:\\Файлы 1\\Задание 6\\text2.txt"),"UTF-8"));
+                            new FileOutputStream("D:\\Файлы 1\\Задание 6\\text2.txt"), StandardCharsets.UTF_8));
             int lineCount = 0;
             int lineWord = 0;
             String s;
@@ -58,7 +59,9 @@ public class Ex6Var5 {
             System.out.println("Ошибка !!!!!!!!");
         }
         finally{
+            assert br != null;
             br.close();
+            assert bw != null;
             bw.flush();
             bw.close();
         }
