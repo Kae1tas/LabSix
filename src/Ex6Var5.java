@@ -46,7 +46,7 @@ public class Ex6Var5 {
             }
 
         } catch (IOException e) {
-            System.out.println("Ошибка !!!!!!!!");
+            System.out.println("Ошибка!");
         }
         finally{
             assert br != null;
